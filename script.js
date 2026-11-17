@@ -40,7 +40,6 @@ function openWindow(id) {
     if (otherWindow !== windowElement) {
       otherWindow.hidden = true;
       otherWindow.style.display = "";
-      otherWindow.classList.remove("maximized");
     }
   });
 
@@ -59,17 +58,12 @@ function closeWindow(id) {
 
   windowElement.hidden = true;
   windowElement.style.display = "";
-  windowElement.classList.remove("maximized");
   updateTaskbar();
 }
 
 function minimizeWindow(windowElement) {
   windowElement.style.display = "none";
   updateTaskbar();
-}
-
-function toggleMaximize(windowElement) {
-  windowElement.classList.toggle("maximized");
 }
 
 document.addEventListener("click", (event) => {
@@ -81,8 +75,6 @@ document.addEventListener("click", (event) => {
       closeWindow(windowElement.id);
     } else if (actionButton.dataset.action === "minimize") {
       minimizeWindow(windowElement);
-    } else if (actionButton.dataset.action === "maximize") {
-      toggleMaximize(windowElement);
     }
     return;
   }

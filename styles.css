@@ -254,17 +254,6 @@ button {
   transform: none;
 }
 
-.popup-window.maximized {
-  position: fixed;
-  z-index: 10;
-  top: 8px;
-  right: 8px;
-  bottom: 52px;
-  left: 8px;
-  width: calc(100vw - 16px);
-  transform: none;
-}
-
 .window-content {
   overflow: auto;
   margin: 3px;
@@ -568,14 +557,6 @@ button {
 
   .desktop-emoji {
     font-size: 30px;
-  }
-
-  .popup-window.maximized {
-    position: fixed;
-    top: 6px;
-    bottom: 56px;
-    left: 4vw;
-    width: 92vw;
   }
 
   .popup-window .title-button {
