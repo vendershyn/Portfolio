@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000080">
+  <title>Vender_Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css?v=22">
+  <script src="script.js?v=13" defer></script>
+</head>
+<body>
+  <main class="desktop" id="desktop">
+    <section class="window welcome-window" id="welcome" aria-labelledby="welcome-title">
+      <header class="title-bar">
+        <span class="title-bar-text" id="welcome-title">Welcome</span>
+      </header>
+      <div class="welcome-content">
+        <div class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">PERSONAL PORTFOLIO</p>
+            <h3>Jalniene Shynne D. Vender</h3>
+            <p class="subtitle">Computer Engineering Student</p>
+          </div>
+          <div class="profile-pic">
+            <img src="images/Profile.jpg" alt="Jalniene Shynne D. Vender in graduation attire">
+          </div>
+        </div>
+        <p class="terminal-line">C:\PORTFOLIO&gt; Hello, world! Welcome to my corner of the web.</p>
+      </div>
+    </section>
+
+    <nav class="desktop-icons" aria-label="Portfolio windows">
+      <button class="desktop-icon" data-open="about">
+        <span class="desktop-emoji" aria-hidden="true">📄</span>
+        <span>About_Me</span>
+      </button>
+      <button class="desktop-icon" data-open="education">
+        <span class="desktop-emoji" aria-hidden="true">🎓</span>
+        <span>Education</span>
+      </button>
+      <button class="desktop-icon" data-open="projects">
+        <span class="desktop-emoji" aria-hidden="true">📁</span>
+        <span>Projects</span>
+      </button>
+      <button class="desktop-icon" data-open="skills">
+        <span class="desktop-emoji" aria-hidden="true">📝</span>
+        <span>Skills</span>
+      </button>
+      <button class="desktop-icon" data-open="experience">
+        <span class="desktop-emoji" aria-hidden="true">🌐</span>
+        <span>Experience</span>
+      </button>
+      <button class="desktop-icon" data-open="gallery">
+        <span class="desktop-emoji" aria-hidden="true">🖼️</span>
+        <span>Gallery_Album</span>
+      </button>
+    </nav>
+
+    <section class="window popup-window" id="about" data-title="About_Me" aria-labelledby="about-title" hidden>
+      <header class="title-bar">
+        <span class="title-bar-text" id="about-title">About_Me</span>
+        <span class="title-buttons">
+          <button class="title-button" data-action="minimize" aria-label="Minimize About Me">_</button>
+          <button class="title-button" data-action="maximize" aria-label="Maximize About Me">□</button>
+          <button class="title-button close-button" data-action="close" aria-label="Close About Me">×</button>
+        </span>
+      </header>
+      <div class="window-content">
+        <h2>Hi! I'm Shynne</h2>
+        <p>I'm currently studying Computer Engineering, exploring both software and hardware. I am driven by my curiosity towards the ever-evolving world of tech.</p>
+        <p>I look forward to meeting people with similar interests and collaborating on exciting projects.<3</p>
+      </div>
+    </section>
+
+    <section class="window popup-window" id="education" data-title="Education" aria-labelledby="education-title" hidden>
+      <header class="title-bar">
+        <span class="title-bar-text" id="education-title">Education</span>
+        <span class="title-buttons">
+          <button class="title-button" data-action="minimize" aria-label="Minimize Education">_</button>
+          <button class="title-button" data-action="maximize" aria-label="Maximize Education">□</button>
+          <button class="title-button close-button" data-action="close" aria-label="Close Education">×</button>
+        </span>
+      </header>
+      <div class="window-content">
+        <h2>Education</h2>
+        <h3>Cebu Technological University - Main Campus</h3>
+        <p>Bachelor of Science in Computer Engineering<br>2024 – Present</p>
+        <h3>Academic achievements</h3>
+        <ul>
+          <li>Studying programming, digital systems, and computer hardware.</li>
+          <li>Building practical skills through classwork and personal projects.</li>
+          <li>Dean's List (Academic Excellence) 2025</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="window popup-window" id="projects" data-title="Projects_Directory" aria-labelledby="projects-title" hidden>
+      <header class="title-bar">
+        <span class="title-bar-text" id="projects-title">Projects_Directory</span>
+        <span class="title-buttons">
+          <button class="title-button" data-action="minimize" aria-label="Minimize Projects">_</button>
+          <button class="title-button" data-action="maximize" aria-label="Maximize Projects">□</button>
+          <button class="title-button close-button" data-action="close" aria-label="Close Projects">×</button>
+        </span>
+      </header>
+      <div class="window-content">
+        <p>Collection of some of my individual and group projects.</p>
+        <div class="project-grid">
+          <article class="project-card">
+            <img class="project-art" src="images/Power_Supply.jpg" alt="Power Supply project illustration">
+            <h3>Power Supply</h3>
+            <p><b>Hardware project</b><br>A multi-output power supply that delivers +5V, +12V, -12V, and adjustable DC voltage for testing electronic components and circuits.</p>
+          </article>
+          <article class="project-card">
+            <img class="project-art" src="images/Bankada_Logo.jpg" alt="Bankada Group project logo">
+            <h3>Bankada</h3>
+            <p><b>Software Group Project</b><br>Bankada is a mobile group savings app for up to 10 people that tracks deposits and withdrawals toward a shared goal using AI receipt scanning—no bank linking required.</p>
+            <a href="https://github.com/KentCodes101/Bankada_Hacktober2026" target="_blank" rel="noopener noreferrer">View GitHub repo</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="window popup-window" id="skills" data-title="Skills" aria-labelledby="skills-title" hidden>
+      <header class="title-bar">
+        <span class="title-bar-text" id="skills-title">Skills</span>
+        <span class="title-buttons">
+          <button class="title-button" data-action="minimize" aria-label="Minimize Skills">_</button>
+          <button class="title-button" data-action="maximize" aria-label="Maximize Skills">□</button>
+          <button class="title-button close-button" data-action="close" aria-label="Close Skills">×</button>
+        </span>
+      </header>
+      <div class="window-content">
+        <h2>Skills inventory</h2>
+        <p>Currently learning and practicing:</p>
+        <ul class="skill-list">
+          <li>
+            <img class="skill-icon" src="images/Python_Logo.jpg" alt="Python logo">
+            <span>Python <strong>[beginner]</strong></span>
+          </li>
+          <li>
+            <img class="skill-icon" src="images/C_Logo.jpg" alt="C logo">
+            <span>C <strong>[beginner]</strong></span>
+          </li>
+          <li>
+            <img class="skill-icon" src="images/C++_Logo.jpg" alt="C++ logo">
+            <span>C++ <strong>[beginner]</strong></span>
+          </li>
+          <li>
+            <img class="skill-icon" src="images/Matlab_Logo.jpg" alt="MATLAB logo">
+            <span>MATLAB <strong>[beginner]</strong></span>
+          </li>
+          <li>
+            <img class="skill-icon" src="images/Circuit_Design_Logo.jpg" alt="Circuit Design logo">
+            <span>Circuit Design <strong>[beginner]</strong></span>
+          </li>
+          <li>
+            <img class="skill-icon" src="images/HTML_Logo.jpg" alt="HTML logo">
+            <span>HTML <strong>[beginner]</strong></span>
+          </li>
+          <li>
+            <img class="skill-icon" src="images/CSS_Logo.jpg" alt="CSS logo">
+            <span>CSS <strong>[beginner]</strong></span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="window popup-window" id="experience" data-title="Experience" aria-labelledby="experience-title" hidden>
+      <header class="title-bar">
+        <span class="title-bar-text" id="experience-title">Experience</span>
+        <span class="title-buttons">
+          <button class="title-button" data-action="minimize" aria-label="Minimize Experience">_</button>
+          <button class="title-button" data-action="maximize" aria-label="Maximize Experience">□</button>
+          <button class="title-button close-button" data-action="close" aria-label="Close Experience">×</button>
+        </span>
+      </header>
+      <div class="window-content">
+        <h2>Communities &amp; experience</h2>
+        <p>Learning with fellow builders and technology communities.</p>
+        <div class="badge-grid">
+          <article class="badge-card">
+            <img class="badge-mark icpep" src="images/ICpEP_Logo.png" alt="ICpEP logo">
+            <div><h3>ICpEP</h3><p>Institute of Computer Engineers of the Philippines<br><b>Public Relations Committee Member</b><br>2026</p></div>
+          </article>
+          <article class="badge-card">
+            <img class="badge-mark" src="images/GDG_Logo.jpg" alt="Google Developer Groups logo">
+            <div><h3>Google Developer Groups</h3><p>Community events, peer learning, and developer talks.<br><b>UI/UX & Project Designer</b><br>2026</p></div>
+          </article>
+          <article class="badge-card">
+            <img class="badge-mark icpep" src="images/ICpEP_Logo.png" alt="ICpEP logo">
+            <div><h3>ICpEP</h3><p>Institute of Computer Engineers of the Philippines<br><b>Creatives Committee Member</b><br>2025-2026</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="window popup-window" id="gallery" data-title="Gallery_Album" aria-labelledby="gallery-title" hidden>
+      <header class="title-bar">
+        <span class="title-bar-text" id="gallery-title">Gallery_Album</span>
+        <span class="title-buttons">
+          <button class="title-button" data-action="minimize" aria-label="Minimize Gallery">_</button>
+          <button class="title-button" data-action="maximize" aria-label="Maximize Gallery">□</button>
+          <button class="title-button close-button" data-action="close" aria-label="Close Gallery">×</button>
+        </span>
+      </header>
+      <div class="window-content">
+        <h2>Moments &amp; memories</h2>
+        <p>A few moments from events and experiences.</p>
+        <div class="gallery-grid">
+          <article class="gallery-card">
+            <img class="gallery-art" src="images/m1.jpg" alt="ICpEP oath-taking ceremony, 2026">
+            <h3>ICpEP.SE - CTU Main Campus</h3>
+            <p>Oath Taking Ceremony 2026</p>
+          </article>
+          <article class="gallery-card">
+            <img class="gallery-art" src="images/m2.jpg" alt="AWS Student Community Day, 2026">
+            <h3>AWS Student Community Day</h3>
+            <p>2026</p>
+          </article>
+          <article class="gallery-card">
+            <img class="gallery-art" src="images/m3.jpg" alt="Hacktoberfest, 2026">
+            <h3>Hacktoberfest</h3>
+            <p>2026</p>
+          </article>
+          <article class="gallery-card">
+            <img class="gallery-art" src="images/m4.jpg" alt="Google Developer Group event at CTU Main Campus, 2026">
+            <h3>Google Developer Group - CTU Main Campus</h3>
+            <p>2026</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="taskbar" aria-label="Windows taskbar">
+    <div class="taskbar-apps" id="taskbar-apps" aria-label="Open windows"></div>
+    <div class="taskbar-spacer"></div>
+    <nav class="social-links" aria-label="Social links">
+      <a class="social-button" href="mailto:vendershyn454@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+      <a class="social-button" href="https://www.linkedin.com/in/vendershyn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+      <a class="social-button" href="https://github.com/vendershyn" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+    </nav>
+    <time class="clock" id="clock" aria-label="Current time"></time>
+  </footer>
+</body>
+</html>
